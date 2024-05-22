@@ -84,14 +84,14 @@ public class Board {
             System.out.print("------+");
         }
         System.out.println();
-    
+
         // print lines board
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 System.out.printf("|%4d  ", board[i][j]);
             }
             System.out.println("|");
-    
+
             // print intermediate line between board
             System.out.print("+");
             for (int j = 0; j < size; j++) {
@@ -101,8 +101,6 @@ public class Board {
         }
         System.out.println();
     }
-    
-    
 
     public int[][] getBoard() {
         return board;
