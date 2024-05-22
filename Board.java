@@ -15,7 +15,7 @@ public class Board {
         }
     }
 
-    private int[] findZeroIndex() {
+    public int[] findZeroIndex() {
         int[] index = new int[2];
         int i, j;
 
@@ -32,7 +32,7 @@ public class Board {
         return null;
     }
 
-    private void swap(int row1, int col1, int row2, int col2) {
+    public void swap(int row1, int col1, int row2, int col2) {
         int aux = board[row1][col1];
         board[row1][col1] = board[row2][col2];
         board[row2][col2] = aux;
